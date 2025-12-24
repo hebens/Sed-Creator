@@ -24,3 +24,26 @@ Sed Studio is a modern, graphical architect for building, testing, and exporting
    ```bash
    git clone [https://github.com/yourusername/sed-studio.git](https://github.com/yourusername/sed-studio.git)
    cd sed-studio
+2. Install dependencies:
+   ```bash
+   pip install customtkinter pyperclip
+4. Run the application:
+   ```bash
+   python sed-studio-pro.py
+## 📖 Usage Tips
+Chaining Commands
+Enter your search/replace patterns in the Step Editor.
+
+Click Add Step to Chain.
+
+Your final command is automatically constructed using the -e flag for maximum efficiency.
+
+Handling File Paths
+Sed Studio monitors your input. If you type a path like /etc/passwd, the tool automatically uses | as a delimiter to avoid "Leaning Toothpick Syndrome."
+
+## 🐧 Linux Integration
+After exporting a script (.sh), ensure you give it execution permissions:
+```bash
+      chmod +x my_generated_script.sh
+      ./my_generated_script.sh target_file.txt
+
